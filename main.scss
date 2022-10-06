@@ -5,22 +5,39 @@
 .mdcont{
     width: 100%;
     height: auto;
+    @include sm{
+        width: 100%;
+    }
     .mdob{
         display: flex;
+        @include sm{
+              flex-direction: column;
+            
+        }
         .mdleft{
             width: 34%;
             height: auto;
             align-self: center;
+            @include sm{
+                width: 100%;
+                height: auto;
+                margin-left: 300px;
+            }
             
             h1{
                 
                 margin: auto;
                 font-size: 60px;
                 width: 400px;
+            
             }
         }
         .mdimg{
            width: 66%;
+            @include sm{
+                width:100%;
+                height: 300px;
+            }
             img{
                 
                 width: 100%;
@@ -45,6 +62,33 @@
     .mdimg3{
         display:flex;
         flex-direction: column;
+    }
+    .mdtext22{
+        margin: auto;
+        background-color: #f9f5f2;
+        text-align: center;
+        width: 100%;
+      
+      
+        h1{
+            padding-top: 20px;
+            margin: auto;
+            width: 570px;
+            font-size: 50px;
+        }
+        p{
+            padding-top: 17px;
+            margin: auto;
+            width: 790px;
+            color: gray;
+           padding-bottom: 70px;
+           font-size: 20px;
+        }
+        h4{
+            padding-top: 70px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
     }
 }
 #moun{
