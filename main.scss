@@ -120,10 +120,11 @@
 }
 
 .mdcont{
+    
     width: 100%;
     height: auto;
     @include sm{
-        width: 100%;
+        width: 160%;
     }
     .mdob{
         display: flex;
@@ -138,7 +139,7 @@
             @include sm{
                 width: 100%;
                 height: auto;
-                margin-left: 300px;
+               
             }
             
             h1{
@@ -169,11 +170,12 @@
         height: auto;
         .mdimg1{
             display: flex;
+            
         }
 
         img{
             width: 50%;
-            height: 574px;
+            height: 524px;
         }
     }
     .mdimg3{
@@ -210,13 +212,14 @@
 }
 #moun{
     width: 300px;
-    height: 300px;
+    height: 262px;
 }
 #moun2{
     width: 300px;
-    height: 275px;
+    height: 262px;
 }
 #kon{
     width: 331px;
+  
 }
   
