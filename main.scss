@@ -2,25 +2,159 @@
 *{
     margin: 0px;
 }
+.nisa-container {
+    width: 100%;
+    height: 120vh;
+    .nisa-items {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 110vh;
+        margin-left: 5%;
+        @include sm {
+            flex-direction: column  ;
+        }
+        .nisa-left {
+            width: 30%;
+            height: 100%;
+            @include sm {
+                width: 100%;
+            }
+            .nisa-txt {
+                background-color: lightgrey;
+                width: 100%;
+                height: 60vh;
+                margin-top: 5%;
+                h1 {
+                    padding-top: 15%;
+                    margin-left: 7%;
+                    font-size: 25px;
+                    font-weight: 400;
+                }
+                p {
+                    width: 80%;
+                    margin-left: 7%;
+                    font-size: 20px;
+                    color: rgb(146, 139, 139);
+                }
+                h2 {
+                    a {
+                        text-decoration: none;
+                        margin-left: 7%;
+                        color: black;
+                        border-bottom: 3px solid brown;
+                        
+                    }
+                }
+            }
+            .nisa-image img {
+                margin-top: 5%;
+                width: 100%;
+                height: 70vh;
+                
+            }
+           
+        }
+        .nisa-center {
+            width: 30%;
+            height: 100%;
+            @include sm {
+                width: 100%;
+                height: auto;
+            }
+            .nisa-image {
+                width: 100%;
+                height: 70vh;
+                margin-top: 45%;
+                h1 {
+                    text-align: center;
+                    font-size: 70px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .nisa-right {
+            width: 30%;
+            height: 100%;
+            @include sm {
+                width: 100%;
+                height: auto;
+                margin-top: 25%;
+            }
+            .nisa-img {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 70vh;
+                }
+            }
+            .nisa-text {
+                margin-top: 5%;
+                h1 {
+                    padding-top: 30%;
+                    margin-left: 7%;
+                    font-size: 25px;
+                    font-weight: 400;
+                }
+                p {
+                    width: 80%;
+                    margin-left: 7%;
+                    font-size: 20px;
+                    color: rgb(146, 139, 139);
+                }
+                h2 {
+                    a {
+                        text-decoration: none;
+                        margin-left: 7%;
+                        color: black;
+                        border-bottom: 3px solid brown;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
 .mdcont{
     width: 100%;
     height: auto;
+    @include sm{
+        width: 100%;
+    }
     .mdob{
         display: flex;
+        @include sm{
+              flex-direction: column;
+            
+        }
         .mdleft{
             width: 34%;
             height: auto;
             align-self: center;
+            @include sm{
+                width: 100%;
+                height: auto;
+                margin-left: 300px;
+            }
             
             h1{
                 
                 margin: auto;
                 font-size: 60px;
                 width: 400px;
+            
             }
         }
         .mdimg{
            width: 66%;
+            @include sm{
+                width:100%;
+                height: 300px;
+            }
             img{
                 
                 width: 100%;
@@ -45,6 +179,33 @@
     .mdimg3{
         display:flex;
         flex-direction: column;
+    }
+    .mdtext22{
+        margin: auto;
+        background-color: #f9f5f2;
+        text-align: center;
+        width: 100%;
+      
+      
+        h1{
+            padding-top: 20px;
+            margin: auto;
+            width: 570px;
+            font-size: 50px;
+        }
+        p{
+            padding-top: 17px;
+            margin: auto;
+            width: 790px;
+            color: gray;
+           padding-bottom: 70px;
+           font-size: 20px;
+        }
+        h4{
+            padding-top: 70px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
     }
 }
 #moun{

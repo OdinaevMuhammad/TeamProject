@@ -6,13 +6,30 @@
   width: 100%;
   height: auto;
 }
+@media (max-width: 480px) {
+  .mdcont {
+    width: 100%;
+  }
+}
 .mdcont .mdob {
   display: flex;
+}
+@media (max-width: 480px) {
+  .mdcont .mdob {
+    flex-direction: column;
+  }
 }
 .mdcont .mdob .mdleft {
   width: 34%;
   height: auto;
   align-self: center;
+}
+@media (max-width: 480px) {
+  .mdcont .mdob .mdleft {
+    width: 100%;
+    height: auto;
+    margin-left: 300px;
+  }
 }
 .mdcont .mdob .mdleft h1 {
   margin: auto;
@@ -21,6 +38,12 @@
 }
 .mdcont .mdob .mdimg {
   width: 66%;
+}
+@media (max-width: 480px) {
+  .mdcont .mdob .mdimg {
+    width: 100%;
+    height: 300px;
+  }
 }
 .mdcont .mdob .mdimg img {
   width: 100%;
@@ -42,6 +65,31 @@
 .mdcont .mdimg3 {
   display: flex;
   flex-direction: column;
+}
+.mdcont .mdtext22 {
+  margin: auto;
+  background-color: #f9f5f2;
+  text-align: center;
+  width: 100%;
+}
+.mdcont .mdtext22 h1 {
+  padding-top: 20px;
+  margin: auto;
+  width: 570px;
+  font-size: 50px;
+}
+.mdcont .mdtext22 p {
+  padding-top: 17px;
+  margin: auto;
+  width: 790px;
+  color: gray;
+  padding-bottom: 70px;
+  font-size: 20px;
+}
+.mdcont .mdtext22 h4 {
+  padding-top: 70px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 #moun {
