@@ -57,3 +57,123 @@
 #kon {
   width: 331px;
 }/*# sourceMappingURL=main.css.map */
+
+/*Jordon's*/
+*{
+  margin: 0;
+}
+.Jordons_Contener{
+  width: 100%;
+  height: 574px;
+  background-image: url(./images/min.jpg);
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Jordons_forcent{
+  display: flex;
+  width: 1140px;
+  height: 514px;
+  background-color: #f2f2f2;
+}
+.Forcent_Left{
+  width: 50%;
+  height: 514px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.Forcent_right{
+  width: 50%;
+  height: 514px;
+
+}
+.Forcent_Left1{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#freepik{
+  text-decoration: black;
+}
+.Forcent_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Forcent_Left2{
+  color: #999999 !important;
+  width: 85%;
+  height: 55%;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body{
+  font-family: "Karla"
+}
+.Forcent_Left2 h4{
+  font-weight: 700;
+}
+.Forcent_Left1 img{
+  width: 255px;
+  height: 255px;
+  border-radius: 200px;
+}
+.linksforlink{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linksforlink a{
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black
+}
+#gg1{
+  margin-top: 20px;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  font-weight: 700;
+  text-transform: none;
+}
+#gg2{
+  letter-spacing: 1px;
+}
+.Jordons_end{
+  width: 100%;
+  height: 40vh;
+  background-color: #333333;
+  color: white;
+}
+.Jordons_end_top{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Jordons_end_bottom{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Jordons_end_bottom a{
+  color: purple;
+}
+/* Jordon's*/
