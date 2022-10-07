@@ -5,16 +5,19 @@
 .obshi{
     width: 100%;
     height: 100vh;
+
     .navbar{
      width: 100%;
      height: 80px;
-     background-color: #c5a28f;
+     background-color: white;
      top: 0;
      display: flex;
      position: fixed;
      font-family: 'Playfair Display', serif;
+    
      .h11{
-        padding: 15px;
+        padding: 20px;
+        padding-left: 60px;
      }
      a{
         margin-left: 650px;
@@ -35,7 +38,7 @@ padding-top: 30px;
     .suratt{
         width: 100%;
         height: 100vh;
-        background-image: url(./IMG/glava.jpeg);
+        background-image: url(/images/glava.jpeg);
         background-size: cover;
         background-position: center;
         display: grid;
@@ -73,33 +76,58 @@ h1{
         height: 350px;
         background-color: #FFFF;
         display: flex;
+        @include sm{
+            flex-direction: column;
+            
+        }
         .di1{
-            background-image: url(./IMG/1km.jpeg);
+            background-image: url(/images/1km.jpeg);
             background-position: center;
             background-size: cover;
             width: 25%;
             height: 350px;
+            @include sm{
+               margin: auto;
+                width: 25%;
+               
+                
+            }
         }
         .di2{
-            background-image: url(./IMG/2ym.jpeg);
+            background-image: url(/images/2ym.jpeg);
             background-position: center;
             background-size: cover;
             width: 25%;
             height: 350px;
+            @include sm{
+                margin: auto;
+                width: 25%;
+               
+            }
         }
         .di3{
-            background-image: url(./IMG/3ym.jpeg);
+            background-image: url(/images/3ym.jpeg);
             background-position: center;
             background-size: cover;
             width: 25%;
             height: 350px;
+            @include sm{
+                margin: auto;
+                width: 25%;
+               
+            }
         }
         .di4{
-            background-image: url(./IMG/4rm.jpeg);
+            background-image: url(/images/4rm.jpeg);
             background-position: center;
             background-size: cover;
             width: 25%;
             height: 350px;
+            @include sm{
+                margin: auto;
+                width: 25%;
+               
+            }
         }
     }
     .ay1to6{
@@ -110,6 +138,7 @@ h1{
         padding-top: 70px;
         justify-content: center;
         align-items: center;
+      
     .div1{
         margin-left: 50px;
         width: 26%;
@@ -166,6 +195,9 @@ h1{
         padding: 10px;
         height: 330px;
         background-color: #FFFF;
+        @include sm{
+            margin-top:230px;
+        }
         h2{
             color: #c5a28f ;
         }
@@ -192,6 +224,10 @@ h1{
         padding: 10px;
         height: 370px;
         background-color: #FFFF;
+        @include sm{
+            margin-top:270px;
+        }
+   
         h2{
             color: #c5a28f ;
         }
@@ -213,10 +249,15 @@ h1{
         }
     }
     .div5{
+        
         width: 26%;
         padding: 10px;
         height: 370px;
         background-color: #FFFF;
+        @include sm{
+            
+            margin-top: 200px;
+        }
         h2{
             color: #c5a28f ;
         }
@@ -238,6 +279,9 @@ h1{
         }
     }
     .div6{
+        @include sm{
+            margin-top: 200px;
+        }
         width: 26%;
         padding: 10px;
         height: 370px;
@@ -268,6 +312,7 @@ h1{
 
 }
 .nisa-container {
+    margin-top: 70px;
     width: 100%;
     height: 120vh;
     .nisa-items {
@@ -286,7 +331,7 @@ h1{
                 width: 100%;
             }
             .nisa-txt {
-                background-color: lightgrey;
+                background-color: #f9f5f2;
                 width: 100%;
                 height: 60vh;
                 margin-top: 5%;
@@ -385,11 +430,12 @@ h1{
 }
 
 .mdcont{
-    
+    margin-top: 1100px;
     width: 100%;
     height: auto;
     @include sm{
-        width: 160%;
+        margin-top: 2300px;
+        width: 100%;
     }
     .mdob{
         display: flex;
@@ -401,10 +447,11 @@ h1{
             width: 34%;
             height: auto;
             align-self: center;
+            
             @include sm{
                 width: 100%;
                 height: auto;
-               
+                margin-left: 100px;
             }
             
             h1{
@@ -419,7 +466,8 @@ h1{
            width: 66%;
             @include sm{
                 width:100%;
-                height: 300px;
+                
+               
             }
             img{
                 
@@ -429,21 +477,42 @@ h1{
         }
     }
     .mdimg2{
-        display: flex;
         margin-top: -4px;
-        width: 100%;
-        height: auto;
+       width: 100%;
+     display: grid;
+     grid-template-columns: 100% 20% 30%;
+
         .mdimg1{
+            width: 100%;
+            
             display: flex;
+            @include sm{
+                flex-direction: column;
+            }
+            .div9393{
+                @include sm{
+                    width: 100%;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .div8383{
+                @include sm{
+                    width: 100%;
+                }
+                img{
+                   
+                    width: 100%;
+                    height: 624px;
+                }
+            }
             
         }
 
-        img{
-            width: 50%;
-            height: 524px;
-        }
     }
     .mdimg3{
+        
         display:flex;
         flex-direction: column;
     }
@@ -452,13 +521,17 @@ h1{
         background-color: #f9f5f2;
         text-align: center;
         width: 100%;
-      
+  
       
         h1{
             padding-top: 20px;
             margin: auto;
             width: 570px;
             font-size: 50px;
+            @include sm{
+                width: 400px;
+                font-size: 40px;
+            }
         }
         p{
             padding-top: 17px;
@@ -467,6 +540,10 @@ h1{
             color: gray;
            padding-bottom: 70px;
            font-size: 20px;
+           @include sm{
+            width: 330px;
+            font-size: 15px;
+           }
         }
         h4{
             padding-top: 70px;
@@ -476,26 +553,79 @@ h1{
     }
 }
 #moun{
-    width: 300px;
-    height: 262px;
+    width: 400px;
+    height: 312px;
+    @include sm{
+        margin-top: -4px;
+        margin-left: -2px;
+        width: 101%;
+    }
 }
 #moun2{
-    width: 300px;
-    height: 262px;
+    width: 400px;
+    height: 312px;
+    @include sm{
+        width: 100%;
+    }
 }
 #kon{
-    width: 331px;
+    width: 100%;
+    height: 624px;
   
 }
 .container-ma{
+    margin-top: 200px;
     width: 100%;
     background-color:#F9F5F2;
     height: 100vh;
     @include sm{
+        margin-top: 1300px;
         width:100%;
         height: auto;
     }
   
+   }
+   .qwerty123{
+    width: 100%;
+    background-image: url(/images/1111111111.jpeg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    @include sm{
+        height: 400px;
+    }
+    .qazz1{
+        margin: auto;
+        border: 1px solid white;
+        border-width: 8px;
+        text-align: center;
+        width: 800px;
+        height: 600px;
+        background-image: url(/images/1111111111.jpeg);
+        background-size: cover;
+        @include sm{
+           margin-top: -100px;
+            width: 50%;
+            height: 400px;
+            
+        }
+        p{
+            
+            padding-top: 125px;
+            width: 650px;
+            color:white;
+            font-size: 25px;
+            padding-left: 75px;
+            @include sm{
+               margin-top: -90px;
+                margin-left: -25px;
+                width: 150px;
+                font-size: 11.9px;
+           
+            }
+        }
+    }
    }
   .fotki-ma{
    
@@ -515,7 +645,7 @@ background-color:#F9F5F2;}
     font-family: Roboto,sans-serif;
     letter-spacing: 0.8px;
     text-align: center;
-    font-weight:100;
+    font-weight:400;
     font-size: 1.4em;
     
    }
@@ -523,7 +653,7 @@ background-color:#F9F5F2;}
     font-size: 17px;
     font-family: Roboto,sans-serif;
     text-align: center;
-    font-weight:100;
+
 color: #9F9999;}
     img{
         width:100%;
@@ -539,6 +669,167 @@ color: #9F9999;}
         border-bottom: 1px solid;
         color: black;
     }
+    .peek{
+        margin-top: 50px;
+       text-align: center;
+   margin-left: 530px;
+         width: 100%;
+         h2{
+            
+            font-weight: 100;
+            font-size: 20px;
+            
+            }
+          
+          }
   
   }
-  
+  .Jordons_Contener{
+    width: 100%;
+    height: 770px;
+    background-image: url(./pics/min.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include sm{
+        height: 900px;
+    }
+}
+.Jordons_forcent{
+    display: flex;
+    width: 1140px;
+    height: 514px;
+    background-color: #f2f2f2;
+    @include sm{
+        width: 85%;
+        height: 800px;
+        flex-direction: column;
+    }
+}
+.Forcent_Left{
+    width: 50%;
+    height: 514px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    @include sm{
+        width: 100%;
+    }
+}
+.Forcent_right{
+    width: 50%;
+    height: 514px;
+    @include sm{
+        width: 100%;
+        height: auto;
+    }
+}
+.Forcent_Left1{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    @include sm{
+        margin-top: 10px;;
+    }
+}
+#freepik{
+    text-decoration: black;
+}
+.Forcent_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include sm{
+        width: 100%;
+        height: auto;
+    } 
+}
+.Forcent_Left2{
+    color: #999999 !important;
+    width: 85%;
+    height: 55%;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include sm{
+        margin-bottom: 80px;;
+    }
+}
+body{
+    font-family: "Karla"
+}
+.Forcent_Left2 h4{
+    font-weight: 700;
+}
+.Forcent_Left1 img{
+    width: 255px;
+    height: 255px;
+    border-radius: 200px;
+}
+.linksforlink{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linksforlink a{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    @include sm{
+        margin-top: 20px;;
+    }
+
+}
+#gg1{
+    margin-top: 20px;
+    font-size: 3rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: none;
+}
+#gg2{
+    letter-spacing: 1px;
+}
+.Jordons_end{
+    width: 100%;
+    height: 200px;
+    background-color: #333333;
+    color: white;
+}
+.Jordons_end_top{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include sm{
+        font-size: 11px;
+    }  
+}
+.Jordons_end_bottom{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+.Jordons_end_bottom a{
+    color: purple;
+    @include sm{
+        font-size: 10px;
+    }
+}
